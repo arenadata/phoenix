@@ -53,6 +53,12 @@
       <artifactId>hbase-server</artifactId>
       <version>${hbase23.compat.version}</version>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.glassfish</groupId>
+          <artifactId>javax.el</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <!-- Override parent dependencyManagement for transitive HBase dependencies -->
     <dependency>
