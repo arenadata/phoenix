@@ -76,8 +76,8 @@
     <!-- Hadoop and Hbase-thirdparty version -->
     <!-- These are expected to be overridden to conform to cluster versions
     along with hbase.version (defined in profiles) -->
-    <hadoop.version>3.1.4</hadoop.version>
-    <hbase.thirdparty.version>2.2.1</hbase.thirdparty.version>
+    <hadoop.version>3.2.4</hadoop.version>
+    <hbase.thirdparty.version>4.1.4</hbase.thirdparty.version>
 
     <phoenix.thirdparty.version>1.1.0</phoenix.thirdparty.version>
     <hbase.suffix>hbase-${hbase.profile}</hbase.suffix>
@@ -89,7 +89,7 @@
     <hbase-2.2.runtime.version>2.2.7</hbase-2.2.runtime.version>
     <hbase-2.3.runtime.version>2.3.7</hbase-2.3.runtime.version>
     <hbase-2.4.0.runtime.version>2.4.0</hbase-2.4.0.runtime.version>
-    <hbase-2.4.runtime.version>2.4.15</hbase-2.4.runtime.version>
+    <hbase-2.4.runtime.version>2.4.17</hbase-2.4.runtime.version>
     <hbase-2.5.runtime.version>2.5.2-hadoop3</hbase-2.5.runtime.version>
 
     <!-- General Properties -->
@@ -130,7 +130,7 @@
     <stream.version>2.9.5</stream.version>
     <icu4j.version>72.1</icu4j.version>
     <guice.version>4.0</guice.version>
-    <zookeeper.version>3.4.14</zookeeper.version>
+    <zookeeper.version>3.5.10</zookeeper.version>
     <curator.version>4.0.0</curator.version>
     <jcodings.version>1.0.55</jcodings.version>
     <thrift.version>0.9.3-1</thrift.version>
@@ -1659,8 +1659,8 @@
         <hbase.profile>2.4</hbase.profile>
         <hbase.compat.version>2.4.1</hbase.compat.version>
         <hbase.version>${hbase-2.4.runtime.version}</hbase.version>
-        <hbase.thirdparty.version>3.4.1</hbase.thirdparty.version>
-        <zookeeper.version>3.5.7</zookeeper.version>
+        <hbase.thirdparty.version>4.1.4</hbase.thirdparty.version>
+        <zookeeper.version>3.5.10</zookeeper.version>
         <tephra.hbase.compat.version>2.4</tephra.hbase.compat.version>
       </properties>
     </profile>
@@ -1733,7 +1733,7 @@
         <hbase.compat.version>2.4.0</hbase.compat.version>
         <hbase.version>${hbase-2.4.0.runtime.version}</hbase.version>
         <hbase.thirdparty.version>3.4.1</hbase.thirdparty.version>
-        <zookeeper.version>3.5.7</zookeeper.version>
+        <zookeeper.version>3.5.10</zookeeper.version>
         <tephra.hbase.compat.version>2.4</tephra.hbase.compat.version>
       </properties>
     </profile>
@@ -1750,8 +1750,8 @@
         <hbase.profile>2.4</hbase.profile>
         <hbase.compat.version>2.4.1</hbase.compat.version>
         <hbase.version>${hbase-2.4.runtime.version}</hbase.version>
-        <hbase.thirdparty.version>3.4.1</hbase.thirdparty.version>
-        <zookeeper.version>3.5.7</zookeeper.version>
+        <hbase.thirdparty.version>4.1.4</hbase.thirdparty.version>
+        <zookeeper.version>3.5.10</zookeeper.version>
         <tephra.hbase.compat.version>2.4</tephra.hbase.compat.version>
       </properties>
     </profile>
