@@ -193,7 +193,8 @@ public enum ExpressionType {
     TanFunction(TanFunction.class),
     RowKeyBytesStringFunction(RowKeyBytesStringFunction.class),
     PhoenixRowTimestampFunction(PhoenixRowTimestampFunction.class),
-    HexQualifierFunction(HexQualifierFunction.class)
+    HexQualifierFunction(HexQualifierFunction.class),
+    QualifierToDecimalFunction(QualifierToDecimalFunction.class)
     ;
 
     ExpressionType(Class<? extends Expression> clazz) {
