@@ -11,7 +11,7 @@ import org.apache.phoenix.util.ByteUtil;
 
 import java.util.List;
 
-@FunctionParseNode.BuiltInFunction(name=LengthFunction.NAME, args={
+@FunctionParseNode.BuiltInFunction(name=HexQualifierFunction.NAME, args={
         @FunctionParseNode.Argument(allowedTypes={ PVarbinary.class })} )
 public class HexQualifierFunction extends ScalarFunction {
 
