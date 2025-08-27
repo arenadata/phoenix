@@ -208,7 +208,9 @@ public enum ExpressionType {
   ScanEndKeyFunction(ScanEndKeyFunction.class),
   TotalSegmentsFunction(TotalSegmentsFunction.class),
   RowSizeFunction(RowSizeFunction.class),
-  RawRowSizeFunction(RawRowSizeFunction.class);
+  RawRowSizeFunction(RawRowSizeFunction.class),
+  HexQualifierFunction(HexQualifierFunction.class),
+  QualifierToDecimalFunction(QualifierToDecimalFunction.class);
 
   ExpressionType(Class<? extends Expression> clazz) {
     this.clazz = clazz;
