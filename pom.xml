@@ -67,9 +67,9 @@
     <!-- Hadoop and Hbase-thirdparty version -->
     <!-- These are expected to be overridden to conform to cluster versions
     along with hbase.version (defined in profiles) -->
-    <hadoop.version>3.4.2</hadoop.version>
+    <hadoop.version>3.4.3.1-4.3.0-0</hadoop.version>
 
-    <phoenix.thirdparty.version>2.1.0</phoenix.thirdparty.version>
+    <phoenix.thirdparty.version>2.2.0</phoenix.thirdparty.version>
     <hbase.suffix>hbase-${hbase.profile}</hbase.suffix>
 
     <!-- This is used by the release script only -->
@@ -80,7 +80,7 @@
     <hbase-2.5.runtime.version>2.5.13-hadoop3</hbase-2.5.runtime.version>
     <hbase-2.6.0.runtime.version>2.6.1-hadoop3</hbase-2.6.0.runtime.version>
     <hbase-2.6.3.runtime.version>2.6.3-hadoop3</hbase-2.6.3.runtime.version>
-    <hbase-2.6.runtime.version>2.6.4-hadoop3</hbase-2.6.runtime.version>
+    <hbase-2.6.runtime.version>2.6.5.1-4.3.0-0</hbase-2.6.runtime.version>
 
     <compileSource>1.8</compileSource>
     <maven.compiler.source>${compileSource}</maven.compiler.source>
@@ -95,8 +95,8 @@
     <shadeSources>true</shadeSources>
 
     <!-- Dependency versions -->
-    <jackson-bom.version>2.18.4.1</jackson-bom.version>
-    <netty-bom.version>4.1.126.Final</netty-bom.version>
+    <jackson-bom.version>2.18.6</jackson-bom.version>
+    <netty-bom.version>4.1.131.Final</netty-bom.version>
     <antlr.version>3.5.2</antlr.version>
     <!-- Only used for tests with HBase 2.1-2.4 -->
     <reload4j.version>1.2.19</reload4j.version>
@@ -105,8 +105,8 @@
     <slf4j.version>1.7.36</slf4j.version>
     <!-- com.google repo will be used except on Aarch64 platform. -->
     <protobuf.group>com.google.protobuf</protobuf.group>
-    <protobuf-java.version>2.5.0</protobuf-java.version>
-    <protoc.version>2.5.0</protoc.version>
+    <protobuf-java.version>3.25.9</protobuf-java.version>
+    <protoc.version>3.25.9</protoc.version>
     <commons-io.version>2.18.0</commons-io.version>
     <commons-lang3.version>3.18.0</commons-lang3.version>
     <commons-csv.version>1.0</commons-csv.version>
@@ -123,8 +123,8 @@
     <stream.version>2.9.5</stream.version>
     <icu4j.version>72.1</icu4j.version>
     <guice.version>5.1.0</guice.version>
-    <zookeeper.version>3.8.4</zookeeper.version>
-    <curator.version>4.2.0</curator.version>
+    <zookeeper.version>3.9.5.1-4.3.0-0</zookeeper.version>
+    <curator.version>5.9.0.1-4.3.0-0</curator.version>
     <jcodings.version>1.0.55</jcodings.version>
     <jetty.version>9.4.58.v20250814</jetty.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
@@ -170,7 +170,7 @@
     <skipParallelStatsDisabledTests>false</skipParallelStatsDisabledTests>
     <skipNeedsOwnMiniClusterTests>false</skipNeedsOwnMiniClusterTests>
     <numForkedUT>8</numForkedUT>
-    <numForkedIT>7</numForkedIT>
+    <numForkedIT>3</numForkedIT>
     <it.failIfNoSpecifiedTests>false</it.failIfNoSpecifiedTests>
     <surefire.failIfNoSpecifiedTests>false</surefire.failIfNoSpecifiedTests>
     <!-- Empty argument when code coverage is deactivated -->
@@ -1293,7 +1293,7 @@
       <dependency>
         <groupId>org.apache.avro</groupId>
         <artifactId>avro</artifactId>
-        <version>1.11.4</version>
+        <version>1.11.5</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
