@@ -63,6 +63,21 @@
     <url>https://git-wip-us.apache.org/repos/asf/phoenix.git</url>
   </scm>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub arenadata Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/arenadata/phoenix</url>
+    </repository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>arenadata</id>
+      <url>https://maven.pkg.github.com/arenadata/*</url>
+    </repository>
+  </repositories>
+
   <properties>
     <!-- Hadoop and Hbase-thirdparty version -->
     <!-- These are expected to be overridden to conform to cluster versions

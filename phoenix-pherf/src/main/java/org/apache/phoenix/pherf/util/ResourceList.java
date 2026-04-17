@@ -165,18 +165,23 @@ public class ResourceList {
 
   private Collection<String> getResourcesFromDirectory(final File directory,
     final Pattern pattern) {
+    return collectFromDirectory(directory, directory, pattern);
+  }
+
+  private Collection<String> collectFromDirectory(final File root, final File directory,
+    final Pattern pattern) {
     final ArrayList<String> retval = new ArrayList<String>();
     final File[] fileList = directory.listFiles();
     for (final File file : fileList) {
       if (isIgnoredDir(file.getAbsolutePath())) continue;
       if (file.isDirectory()) {
-        retval.addAll(getResourcesFromDirectory(file, pattern));
+        retval.addAll(collectFromDirectory(root, file, pattern));
       } else {
-        final String fileName = file.getName();
         final boolean accept = pattern.matcher(file.toString()).matches();
         if (accept) {
-          LOGGER.debug("Adding File from directory: " + fileName);
-          retval.add("/" + fileName);
+          final String relPath = root.toURI().relativize(file.toURI()).getPath();
+          LOGGER.debug("Adding File from directory: " + relPath);
+          retval.add("/" + relPath);
         }
       }
     }
